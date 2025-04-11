@@ -12,7 +12,7 @@
       system: let
         pkgs = nixpkgs.legacyPackages.${system};
 
-        python = pkgs.python313.withPackages(ps: with ps; [
+        python = pkgs.python3.withPackages(ps: with ps; [
           python-lsp-server
         ]);
 
