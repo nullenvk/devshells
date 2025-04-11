@@ -12,11 +12,12 @@
       system: let
         pkgs = nixpkgs.legacyPackages.${system};
 
-        python = pkgs.python313;
+        python = pkgs.python313.withPackages(ps: with ps; [
+          python-lsp-server
+        ]);
 
         nativeBuildInputs = with pkgs; [
           python
-          python.pkgs.python-lsp-server
         ];
 
         buildInputs = with pkgs; [];
