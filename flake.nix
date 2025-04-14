@@ -15,6 +15,14 @@
             path = ./python;
             description = "Python development environment";
         };
+
+        c-cpp = {
+            path = ./c-cpp;
+            description = "C/C++ development environment";
+        };
+
+        c = c-cpp;
+        cpp = c-cpp;
     };
   };
 }
