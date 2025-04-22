@@ -21,6 +21,11 @@
             description = "C/C++ development environment";
         };
 
+        haskell = {
+            path = ./haskell;
+            description = "Haskell development environment";
+        };
+
         c = c-cpp;
         cpp = c-cpp;
     };
